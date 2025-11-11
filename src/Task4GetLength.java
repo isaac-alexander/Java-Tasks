@@ -1,24 +1,30 @@
-//Write a Java program to get the length of a given string.
-//Sample Output:
-//The string length of 'example.com' is: 11
-
+// Write a Java program to get the length of a given string.
+// Sample Output:
+// The string length of 'example.com' is: 11
 
 // Steps / method:
-// Assign the string characters to a variable
-// used the length() method to get the length of a given string. Return the number of characters in a string:
+// Use the length() method to get the length of a given string. Return the number of characters in a string:
 
-
-
-
+// Declare and assign the string
+// Call the method to get the length
+// Print the returned value
 
 public class Task4GetLength {
-    static void main(String[] args) {
+
+    // method to return string length
+    public static int getStringLength(String text) {
+        return text.length();
+    }
+
+    public static void main(String[] args) {
+
+        // Declare and assign string
         String myStr = "example.com";
-        int result = myStr.length();
 
-        String mySentence = "The string length of 'example.com' is: ";
+        // Call the method
+        int result = getStringLength(myStr);
 
-        // concatenate mySentence to myStr
-        System.out.println(mySentence + result); // The string length of 'example.com' is: 11
+        // Print result
+        System.out.println("The string length of '" + myStr + "' is: " + result);
     }
 }
