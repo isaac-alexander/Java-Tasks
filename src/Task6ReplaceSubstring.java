@@ -6,20 +6,25 @@
 
 
 // Steps / method:
-// Assign the string characters to a variable
 // used the replaceFirst() method to Replace 'fox' with 'cat'
 // The replaceFirst() method replaces the first match of a regular expression in a string with a new substring.
 
+// Declare and assign the string
+// Call the method to replace the first match
+// Print the returned string
+
+
 public class Task6ReplaceSubstring {
+
+    // Method that replaces the first occurrence of a substring
+    public static String replaceFirstMatch(String text, String target, String replacement) {
+        // replaceFirst() replaces only the first match found
+        return text.replaceFirst(target, replacement);
+    }
+
     public static void main(String[] args) {
-        // Assign the string characters to a variable
-        String myStr = "The quick brown fox jumps over the lazy dog.";
-        // Assign the new character to a variable
-        String regex = "cat";
-
-        // used the replaceFirst() method to Replace 'fox' with 'cat' and assign to result variable
-        String result = myStr.replaceFirst(regex, "at");
-
+        // Call method and print new string
+        String result = replaceFirstMatch("The quick brown fox jumps over the lazy dog.", "fox", "cat");
         System.out.println(result);
     }
 }
