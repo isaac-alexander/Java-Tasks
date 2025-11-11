@@ -5,20 +5,23 @@
 
 
 // Steps / method:
-// Assign the strings characters to variables
-// used the startsWith() method checks whether a string starts with the specified character(s). Returns a Boolean value (True or False(
+// Use the startsWith() method checks whether a string starts with the specified character(s). Returns a Boolean value (True or False(
+
+// Declare and assign both strings
+// Call the method to check the beginning
+// Print results
 
 public class Task7StartWith {
+
+    // Method to check if text begins with a specific prefix
+    public static boolean checkStartsWith(String text, String prefix) {
+        // startsWith() returns true or false
+        return text.startsWith(prefix);
+    }
+
     public static void main(String[] args) {
-        // Assign the strings characters to variables
-        String myStr1 = "Red is favorite color. starts with Red?";
-        String myStr2 = "Orange is also my favorite color. starts with Red?";
-
-        // used the startsWith() method checks whether a string starts with the specified character(s).
-        Boolean result1 = myStr1.startsWith("Red");
-        Boolean result2 = myStr2.startsWith("Red");
-
-        System.out.println(result1); //true
-        System.out.println(result2); // false
+        // Print results of checks
+        System.out.println(checkStartsWith("Red is favorite color.", "Red"));
+        System.out.println(checkStartsWith("Orange is also my favorite color.", "Red"));
     }
 }
