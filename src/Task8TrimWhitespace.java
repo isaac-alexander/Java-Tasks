@@ -5,21 +5,28 @@
 
 
 // Steps / method:
-// Assign the string characters to a variable
-// used the trim() method removes whitespace from both ends of a string.
+// Use the trim() method removes whitespace from both ends of a string.
+
+// Declare and assign the string
+// Call the method to trim spaces
+// Print both original and trimmed output
 
 public class Task8TrimWhitespace {
+
+    // Method that removes leading and trailing spaces
+    public static String trimText(String text) {
+        // trim() removes whitespace at both ends
+        return text.trim();
+    }
+
     public static void main(String[] args) {
-        // Assign the string characters to a variable
-        String myStr = "       Java Exercises        ";
+        // Store original string
+        String original = "       Java Exercises        ";
+        // Call trim method
+        String trimmed = trimText(original);
 
-        // original text with whitespace
-        String result1 = myStr;
-
-        // trim method to remove whitespace
-        String result2 = myStr.trim();
-
-        System.out.println(result1); //        Java Exercises
-        System.out.println(result2); // Java Exercises
+        // Show before and after
+        System.out.println(original);
+        System.out.println(trimmed);
     }
 }
