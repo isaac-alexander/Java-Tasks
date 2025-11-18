@@ -1,2 +1,19 @@
+//Java Array Program For Array Rotation
+//Input: arr[] = {1, 2, 3, 4, 5, 6, 7},  d = 2
+//Output: [ 3, 4, 5, 6, 7, 1, 2 ]
+//Explanation: d=2 so 2 elements are rotated to the end of the array. So, 1 2 is rotated back. So, Final result: 3, 4, 5, 6, 7, 1, 2
+
+
+
 public class Task16TaskArrayRotation {
+    // this method takes an int array arr and an int d (steps to rotate)
+    public static int[] rotateArray(int[] arr, int d) {
+        // Calculate d modulo arr length to avoid extra rotation
+        // Create a new array called result with same size
+        // Copy elements from index d to end into result
+        // Then copy the first d elements to the end of result
+        // Return the result array
+        return arr; // dummy return
+    }
+
 }
